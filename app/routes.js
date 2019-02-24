@@ -1,6 +1,9 @@
+// imporing table todo from models
 var Todo = require('./models/todo');
 
+// function to extract all the todo available in our db
 function getTodos(res) {
+    // find all query on todo table that'll return the list of todo's available in our db
     Todo.find(function (err, todos) {
 
         // if there is an error retrieving, send the error. nothing after res.send(err) will execute
@@ -12,6 +15,7 @@ function getTodos(res) {
     });
 };
 
+// now we are about to make a bunch of api routes for our todo app
 module.exports = function (app) {
 
     // api ---------------------------------------------------------------------
