@@ -1,3 +1,4 @@
+// defining todoservice as a angular module
 angular.module('todoService', [])
 
 	// super simple service

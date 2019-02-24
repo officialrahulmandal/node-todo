@@ -1,3 +1,4 @@
+// defining todocontroller as a angular module
 angular.module('todoController', [])
 
 	// inject the Todo service factory into our controller
