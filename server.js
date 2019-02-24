@@ -6,8 +6,8 @@ var mongoose = require('mongoose'); 				// mongoose for mongodb
 var port = process.env.PORT || 8080; 				// set the port
 var database = require('./config/database'); 			// load the database config
 var morgan = require('morgan');    // importing morgan library
-var bodyParser = require('body-parser');  // 
-var methodOverride = require('method-override');
+var bodyParser = require('body-parser');  // using body-parser library to extract information from body
+var methodOverride = require('method-override'); // importing method-overide module
 
 // configuration ===============================================================
 mongoose.connect(database.localUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
