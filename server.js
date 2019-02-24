@@ -1,11 +1,12 @@
 // set up ======================================================================
+// main server file with all those required configuration
 var express = require('express');
 var app = express(); 						// create our app w/ express
 var mongoose = require('mongoose'); 				// mongoose for mongodb
 var port = process.env.PORT || 8080; 				// set the port
 var database = require('./config/database'); 			// load the database config
-var morgan = require('morgan');
-var bodyParser = require('body-parser');
+var morgan = require('morgan');    // importing morgan library
+var bodyParser = require('body-parser');  // 
 var methodOverride = require('method-override');
 
 // configuration ===============================================================
